@@ -1,9 +1,4 @@
----
-title: "Documentation"
-author: "Eric He"
-date: "September 12, 2017"
-output: html_document
----
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -26,7 +21,7 @@ For each data feature, this writeup will give a short overview of the creation p
 Text Data
 --
 
-The raw data consists of raw HTML code, and requires a fairly intricate cleaning process derived from the [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2870309) "The Annual Report Algorithm" by Jorg Hering. Each section of the financial statement is tagged with a "°" degree symbol. A detailed walkthrough of cleaning a filing is in [here](https://github.com/EricHe98/Financial-Statements-Text-Analysis/blob/master/Documentation/Cleaning-Raw-Filings.md), and the script for cleaning all quarterly filings is [here](https://github.com/EricHe98/Financial-Statements-Text-Analysis/blob/master/Documentation/parsing-script.R). 
+The raw data consists of raw HTML code, and requires a fairly intricate cleaning process derived from the [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2870309) "The Annual Report Algorithm" by Jorg Hering. Each section of the financial statement is tagged with a "Â°" degree symbol. A detailed walkthrough of cleaning a filing is in [here](https://github.com/EricHe98/Financial-Statements-Text-Analysis/blob/master/Documentation/Cleaning-Raw-Filings.md), and the script for cleaning all quarterly filings is [here](https://github.com/EricHe98/Financial-Statements-Text-Analysis/blob/master/Documentation/parsing-script.R). 
 
 An example of a raw filing is the [Apple 2016 filing](https://www.sec.gov/Archives/edgar/data/320193/0001628280-16-020309.txt) on the SEC website. The [cleaned file](https://github.com/EricHe98/Financial-Statements-Text-Analysis/blob/master/Sample-Data/Apple-2016-Cleaned.txt) has been reduced from 12.8 MB to 285 KB. Even after cleaning, precautions must be taken when doing any analysis to correct for errors caused by poor formatting. Below is pasted output comparing the raw and cleaned Apple filings.
 
